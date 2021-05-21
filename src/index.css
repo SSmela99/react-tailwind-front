@@ -1,13 +1,80 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.mainBg {
+  height: 100%;
+  min-height: 800px;
+  padding-bottom: 50px;
+  background-color: #e8e9eb;
+  background-size: cover;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.mainSection {
+  min-height: 800px;
+}
+
+.on {
+  opacity: 1;
+  top: 3rem;
+  height: fit-content;
+  max-height: 31.25rem;
+  transition: 0.3s;
+}
+
+@media (min-width: 768px) {
+  .title {
+    color: black !important;
+  }
+}
+
+.navBtn {
+  width: 80%;
+  height: 0.125rem;
+  background-color: black;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  transition: 0.5s;
+}
+
+.navBtn::after,
+.navBtn::before {
+  width: 100%;
+  height: 0.125rem;
+  background-color: black;
+  position: absolute;
+  content: "";
+  display: block;
+  transition: 0.3s;
+}
+
+.navBtn::after {
+  top: 0.625rem;
+}
+
+.navBtn::before {
+  top: -0.625rem;
+}
+
+.navBtn.menuOn {
+  background-color: #3d3d3d;
+}
+
+.navBtn.menuOn::after {
+  transform: rotate(45deg);
+  background-color: #fff;
+  top: 0;
+}
+
+.navBtn.menuOn::before {
+  transform: rotate(-45deg);
+  background-color: #fff;
+  top: 0;
+}
+
+.mobileMenu {
+  background-color: #3d3d3d;
 }
