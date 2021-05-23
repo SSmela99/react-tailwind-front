@@ -132,7 +132,7 @@ const Nav = () => {
         </div>
         <div
           className={clsx(
-            "h-auto w-full bg-dark absolute block md:hidden left-0 mobileMenu transition duration-300",
+            "h-auto w-full bg-dark absolute block md:hidden left-0 mobileMenu transition duration-300 z-20",
             mobileMenu ? "opacity-1" : "opacity-0"
           )}
         >
