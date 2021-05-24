@@ -1,10 +1,12 @@
 import React from "react";
-import { MainPage } from "components/Components";
+import { MainPage, SectionMore, SectionCarousel } from "components/Components";
 
 const App = () => {
   return (
     <>
       <MainPage />
+      <SectionMore />
+      <SectionCarousel />
     </>
   );
 };
