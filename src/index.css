@@ -78,3 +78,51 @@
 .mobileMenu {
   background-color: #3d3d3d;
 }
+
+.learnBtn {
+  cursor: pointer;
+}
+
+.arrowContainer {
+  position: relative;
+  width: 20px;
+  height: 2px;
+  transition: 0.3s;
+}
+
+.arrow {
+  background-color: rgb(96, 165, 250);
+  position: absolute;
+  right: -5px;
+  top: 12px;
+}
+
+.arrow::after,
+.arrow::before {
+  display: block;
+  content: "";
+  width: 10px;
+  height: 2px;
+  background-color: rgb(96, 165, 250);
+  position: absolute;
+}
+
+.arrow::after {
+  right: 0;
+  top: -2px;
+  transform: rotate(30deg);
+}
+
+.arrow::before {
+  right: 0;
+  top: 2px;
+  transform: rotate(-30deg);
+}
+
+.learnBtn:hover > .arrowContainer {
+  width: 30px;
+}
+
+.learnBtn:hover > .arrow::after {
+  background-color: red;
+}
