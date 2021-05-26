@@ -5,6 +5,7 @@ import {
   SectionCarousel,
   SectionSecure,
   SectionAbout,
+  Companies,
 } from "components/Components";
 
 import "slick-carousel/slick/slick.css";
@@ -18,6 +19,7 @@ const App = () => {
       <SectionCarousel />
       <SectionSecure />
       <SectionAbout />
+      <Companies />
     </>
   );
 };

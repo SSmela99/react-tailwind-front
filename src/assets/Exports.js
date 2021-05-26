@@ -1,0 +1,9 @@
+export { default as apple } from "./companies/apple.png";
+export { default as cisco } from "./companies/cisco.png";
+export { default as daegu } from "./companies/daegu.png";
+export { default as ea } from "./companies/electronics-arts.png";
+export { default as googleDrive } from "./companies/google-drive.png";
+export { default as playstation } from "./companies/playstation.png";
+export { default as slack } from "./companies/slack.png";
+export { default as telegram } from "./companies/telegram.png";
+export { default as youtube } from "./companies/youtube.png";
