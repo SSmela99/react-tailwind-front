@@ -6,7 +6,7 @@ import giftbox from "assets/giftbox.png";
 const SectionMore = () => {
   return (
     <div className="w-full">
-      <div className="container mx-auto py-10 px-5">
+      <div className="container mx-auto lg:py-32 md:py-24 py-16 px-5">
         <div className="block md:flex justify-center items-center relative">
           <div className="text-center flex-col w-full md:w-1/2 md:border-r md:border-b-0 border-b md:pb-0 pb-10">
             <div className="h-40 w-40 bg-purple-200 flex items-center justify-center mx-auto mb-5">

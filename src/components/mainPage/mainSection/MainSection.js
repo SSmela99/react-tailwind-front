@@ -19,7 +19,7 @@ const MainSection = () => {
           veniam velit laboris non non deserunt excepteur qui magna magna
           aliquip.
         </p>
-        <button className="bg-blue-500 px-6 py-2 text-white font-bold text-lg shadow-xl rounded-lg block mx-auto">
+        <button className="bg-blue-500 px-6 py-2 text-white font-bold text-lg shadow-xl rounded-lg block mx-auto lg:mx-0">
           Learn More
         </button>
       </div>

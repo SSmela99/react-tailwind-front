@@ -126,3 +126,112 @@
 .learnBtn:hover > .arrow::after {
   background-color: red;
 }
+
+.carouselItem {
+  min-height: 400px;
+  max-height: 600px;
+  background-color: #fff;
+}
+
+.carouselItem .carouselItemTitle {
+  min-height: 84px;
+}
+
+.securityBg {
+  width: 90%;
+  margin: 0 auto;
+  min-height: 200px;
+  background-image: url("./assets/mountain.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.securityPanels {
+  min-height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.redBg {
+  background: rgb(232, 133, 133);
+  background: linear-gradient(
+    0deg,
+    rgba(232, 133, 133, 1) 0%,
+    rgba(252, 252, 252, 1) 29%
+  );
+}
+
+.greenBg {
+  background: rgb(163, 232, 133);
+  background: linear-gradient(
+    0deg,
+    rgba(163, 232, 133, 1) 0%,
+    rgba(252, 252, 252, 1) 29%
+  );
+}
+
+.yellowBg {
+  background: rgb(232, 231, 133);
+  background: linear-gradient(
+    0deg,
+    rgba(232, 231, 133, 1) 0%,
+    rgba(252, 252, 252, 1) 29%
+  );
+}
+
+.blueBg {
+  background: rgb(157, 210, 240);
+  background: linear-gradient(
+    0deg,
+    rgba(157, 210, 240, 1) 0%,
+    rgba(252, 252, 252, 1) 29%
+  );
+}
+
+@media (max-width: 1024px) {
+  .blueBg,
+  .yellowBg,
+  .greenBg,
+  .redBg {
+    background: #fff !important;
+  }
+}
+
+.redHeader:hover,
+.blueHeader:hover,
+.yellowHeader:hover,
+.greenHeader:hover {
+  margin-right: 25px;
+  transition: 0.2s;
+}
+
+@media (max-width: 1280px) {
+  .redHeader:hover,
+  .blueHeader:hover,
+  .yellowHeader:hover,
+  .greenHeader:hover {
+    margin-right: 0px;
+  }
+}
+
+.redHeader:hover .redSpan {
+  color: rgb(239, 68, 68);
+  transition: 0.3s;
+}
+
+.blueHeader:hover .blueSpan {
+  color: rgb(96, 165, 250);
+  transition: 0.3s;
+}
+
+.greenHeader:hover .greenSpan {
+  color: rgb(16, 185, 129);
+  transition: 0.3s;
+}
+
+.yellowHeader:hover .yellowSpan {
+  color: rgb(251, 191, 36);
+  transition: 0.3s;
+}
