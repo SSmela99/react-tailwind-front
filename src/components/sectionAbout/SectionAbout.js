@@ -34,14 +34,14 @@ const SectionAbout = () => {
   return (
     <div
       className={clsx(
-        "w-100 py-20 transition-all duration-500",
+        "w-100 lg:py-20 pb-20 pt-10 transition-all duration-500",
         slideIndex === 0 && "redBg",
         slideIndex === 1 && "greenBg",
         slideIndex === 2 && "blueBg",
         slideIndex === 3 && "yellowBg"
       )}
     >
-      <div className="xl:container mx-auto">
+      <div className="xl:container mx-auto px-5">
         <div className="text-center">
           <h1 className="font-bold text-4xl text-gray-700">What is Quip?</h1>
           <p className="max-w-3xl mx-auto py-5 text-gray-600 leading-7">
@@ -50,7 +50,7 @@ const SectionAbout = () => {
             Case Swarms. Standardize, automate and embed real-time,
             collaborative documents inside Salesforce records.
           </p>
-          <div className="text-white text-lg">
+          <div className="text-white text-lg lg:block hidden">
             <button className="bg-blue-500 hover:bg-blue-600 font-semibold mx-2 py-2 px-5 rounded shadow-md">
               Contact Sales
             </button>
@@ -131,6 +131,61 @@ const SectionAbout = () => {
                 messaging.
               </p>
             </div>
+          </div>
+        </div>
+        <div className="block lg:hidden px-5">
+          <div className="py-2">
+            <Carousel {...settings}>
+              <div className="text-center">
+                <img src={redSlide} alt="redSlide" className="mb-10" />
+                <h1 className="text-xl font-bold text-gray-700">
+                  <span className="text-red-500">Documents </span>that fuel a
+                  culture of action
+                </h1>
+                <p className="font-light text-sm pt-2 leading-6">
+                  Quip documents unite your team’s work and communication, so
+                  you can get everything done in one place.
+                </p>
+              </div>
+
+              <div className="text-center">
+                <img src={greenSlide} alt="greenSlide" className="mb-10" />
+                <h1 className="text-xl font-bold text-gray-700">
+                  <span className="text-green-500">Spreadsheets</span> that turn
+                  numbers into decisions
+                </h1>
+                <p className="font-light text-sm pt-2 leading-6">
+                  Embed spreadsheets into documents to give data the context
+                  your team needs to make critical decisions.
+                </p>
+              </div>
+
+              <div className="text-center">
+                <img src={blueSlide} alt="blueSlide" className="mb-10" />
+                <h1 className="text-xl font-bold text-gray-700">
+                  <span className="text-blue-500">Slides</span> that drive
+                  engagement & feedback
+                </h1>
+                <p className="font-light text-sm pt-2 leading-6">
+                  Team-based slides that quickly and clearly get you to the
+                  right decision — with fewer, better meetings, and no messy
+                  file versions.
+                </p>
+              </div>
+
+              <div className="text-center">
+                <img src={yellowSlide} alt="yellowSlide" className="mb-10" />
+                <h1 className="text-xl font-bold text-gray-700">
+                  <span className="text-yellow-500">Chat</span> that breaks down
+                  information silos
+                </h1>
+                <p className="font-light text-sm pt-2 leading-6">
+                  Streamline your workflow with team chat built into every
+                  document and spreadsheet; plus team chat rooms and 1:1
+                  messaging.
+                </p>
+              </div>
+            </Carousel>
           </div>
         </div>
       </div>
