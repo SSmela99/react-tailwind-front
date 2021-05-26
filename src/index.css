@@ -190,14 +190,14 @@
   );
 }
 
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
   .blueBg,
   .yellowBg,
   .greenBg,
   .redBg {
     background: #fff !important;
   }
-}
+} */
 
 .redHeader:hover,
 .blueHeader:hover,
@@ -234,4 +234,8 @@
 .yellowHeader:hover .yellowSpan {
   color: rgb(251, 191, 36);
   transition: 0.3s;
+}
+
+.mobileAboutCarousel {
+  min-height: 300px;
 }
