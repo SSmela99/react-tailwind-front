@@ -1,5 +1,14 @@
 import React from "react";
-import { MainPage, SectionMore, SectionCarousel } from "components/Components";
+import {
+  MainPage,
+  SectionMore,
+  SectionCarousel,
+  SectionSecure,
+  SectionAbout,
+} from "components/Components";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const App = () => {
   return (
@@ -7,6 +16,8 @@ const App = () => {
       <MainPage />
       <SectionMore />
       <SectionCarousel />
+      <SectionSecure />
+      <SectionAbout />
     </>
   );
 };
