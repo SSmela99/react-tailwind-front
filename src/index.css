@@ -10,14 +10,14 @@
   background-size: cover;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
   .mainBg {
     padding-bottom: 80px;
   }
 }
 
 .mainSection {
-  min-height: 760px;
+  min-height: 650px;
 }
 
 .on {
