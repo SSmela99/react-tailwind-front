@@ -10,8 +10,14 @@
   background-size: cover;
 }
 
+@media (max-width: 768px) {
+  .mainBg {
+    padding-bottom: 80px;
+  }
+}
+
 .mainSection {
-  min-height: 650px;
+  min-height: 760px;
 }
 
 .on {
@@ -190,15 +196,6 @@
   );
 }
 
-/* @media (max-width: 1024px) {
-  .blueBg,
-  .yellowBg,
-  .greenBg,
-  .redBg {
-    background: #fff !important;
-  }
-} */
-
 .redHeader:hover,
 .blueHeader:hover,
 .yellowHeader:hover,
@@ -238,4 +235,74 @@
 
 .mobileAboutCarousel {
   min-height: 300px;
+}
+
+.footerInformations {
+  min-width: 250px;
+}
+
+@media (max-width: 1279px) {
+  .footerInformations {
+    min-width: 175px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footerInformations {
+    min-width: 0;
+    width: fit-content;
+  }
+}
+
+.footer-item-a {
+  grid-area: logo;
+}
+
+.footer-item-b {
+  grid-area: column1;
+}
+
+.footer-item-c {
+  grid-area: column2;
+}
+
+.footer-item-d {
+  grid-area: column3;
+}
+
+.footer-item-e {
+  grid-area: input;
+}
+
+.grid {
+  display: grid;
+  grid-template-areas: "logo column1 column2 column3 input";
+}
+
+@media (max-width: 1023px) {
+  .grid {
+    grid-template-areas:
+      "logo column1 column2 column3"
+      "input input input input";
+  }
+}
+
+@media (max-width: 767px) {
+  .grid {
+    grid-template-areas:
+      "logo . ."
+      "column1 column2 column3"
+      "input input input";
+  }
+}
+
+@media (max-width: 580px) {
+  .grid {
+    grid-template-areas:
+      "logo ."
+      "column2 column2"
+      "column1 column3"
+      "input input";
+    justify-content: space-around;
+  }
 }

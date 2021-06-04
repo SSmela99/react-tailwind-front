@@ -21,10 +21,10 @@ const SectionAbout = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
-    pauseOnHover: true,
+    autoplaySpeed: 3500,
     beforeChange: (current, next) => setSlideIndex(next),
     afterChange: (current) => setSlideIndex(current),
+    pauseOnHover: true,
   };
 
   useEffect(() => {
@@ -76,9 +76,9 @@ const SectionAbout = () => {
               />
             </Carousel>
           </div>
-          <div className="w-1/2 cursor-pointer flex flex-col items-end pr-5">
+          <div className="w-1/2 flex flex-col items-end pr-5">
             <div
-              className="my-4 max-w-xl redHeader transition-all"
+              className="my-4 max-w-xl redHeader transition-all cursor-pointer"
               onClick={() => setSlideIndex(0)}
             >
               <h1 className="text-xl font-bold text-gray-700">
@@ -91,7 +91,7 @@ const SectionAbout = () => {
               </p>
             </div>
             <div
-              className="my-4 max-w-xl greenHeader transition-all"
+              className="my-4 max-w-xl greenHeader transition-all cursor-pointer"
               onClick={() => setSlideIndex(1)}
             >
               <h1 className="text-xl font-bold text-gray-700">
@@ -104,7 +104,7 @@ const SectionAbout = () => {
               </p>
             </div>
             <div
-              className="my-4 max-w-xl blueHeader transition-all"
+              className="my-4 max-w-xl blueHeader transition-all cursor-pointer"
               onClick={() => setSlideIndex(2)}
             >
               <h1 className="text-xl font-bold text-gray-700">
@@ -118,7 +118,7 @@ const SectionAbout = () => {
               </p>
             </div>
             <div
-              className="my-4 max-w-xl yellowHeader transition-all"
+              className="my-4 max-w-xl yellowHeader transition-all cursor-pointer"
               onClick={() => setSlideIndex(3)}
             >
               <h1 className="text-xl font-bold text-gray-700">
@@ -188,6 +188,14 @@ const SectionAbout = () => {
             </Carousel>
           </div>
         </div>
+      </div>
+      <div className="text-white text-lg lg:hidden block flex justify-center mt-10">
+        <button className="bg-blue-500 hover:bg-blue-600 font-semibold mx-2 py-2 px-5 rounded shadow-md">
+          Contact Sales
+        </button>
+        <button className="bg-blue-400 hover:bg-blue-600 font-semibold mx-2 py-2 px-5 rounded shadow-md">
+          Learn More
+        </button>
       </div>
     </div>
   );

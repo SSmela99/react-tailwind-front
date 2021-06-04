@@ -26,7 +26,7 @@ const Companies = () => {
   ];
 
   return (
-    <div className="container mx-auto py-10 px-5">
+    <div className="container mx-auto py-24 px-5">
       <h1 className="text-center text-2xl font-bold text-gray-700 mb-6">
         Trusted by businesses worldwide
       </h1>
